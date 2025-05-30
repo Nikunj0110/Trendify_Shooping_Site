@@ -11,17 +11,21 @@ function Header() {
     scrollvalue > 100 ? setnav(true) : setnav(false);
   };
 
-window.addEventListener("scroll",changeValueOnScroll)
-
-
-
+  window.addEventListener("scroll", changeValueOnScroll);
 
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg" className={`${nav===true ? "sticky":""}`}>
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        className={`${nav === true ? "sticky" : ""}`}
+      >
         <Container>
           <Navbar.Brand className="header">
-            <h4><img src="./images.png" alt="Logo" className="img-fluid" />Trendify</h4>
+            <h4>
+              <img src="./images.png" alt="Logo" className="img-fluid" />
+              Trendify
+            </h4>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,15 +34,15 @@ window.addEventListener("scroll",changeValueOnScroll)
               <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/about">
+              <Nav.Link as={Link} to="/">
                 {" "}
                 About
               </Nav.Link>
-              <Nav.Link as={Link} to="/shop">
+              <Nav.Link as={Link} to="/">
                 {" "}
                 Shop
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact">
+              <Nav.Link as={Link} to="/">
                 {" "}
                 Contact
               </Nav.Link>
