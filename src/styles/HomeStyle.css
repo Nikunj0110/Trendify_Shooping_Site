@@ -166,6 +166,7 @@
   text-align: right;
   padding: 80px 35px 50px;
   border-radius: 6px;
+  display: none;
 }
 
 .menu_section .ads_img2 {
@@ -387,7 +388,14 @@ footer .copyright ul li:last-child::after{
   .contact-section h2{
     font-size: 35px;
   }
+   
 }
+
+/* @media (max-width:1500px){
+  .ads_box{
+    display: none;
+  }
+} */
 
 @media (max-width: 767px) {
   /* home hero */
@@ -401,12 +409,17 @@ footer .copyright ul li:last-child::after{
     top: -40px;
     right: 0px;
   }
+ @media (max-width:571px) {
+   .ads_box{
+    display: block !important;
+  }
 
+ }
   /* home menu section 3  */
   .menu_section .para {
     padding: 10px 0px;
   }
-
+  
   /* Shop section 5  */
   .shop_section h4 {
     font-size: 1.8rem;
@@ -435,4 +448,6 @@ footer .copyright ul li:last-child::after{
   .menu_section .add_to_cart a {
     opacity: 1;
   }
+
+ 
 }
